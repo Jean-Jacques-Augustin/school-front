@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import {Box} from "@mui/material";
+import {Route, Routes} from "react-router-dom";
+
+/**
+ * @name App
+ * @constructor
+ * @TODO: Point d'entrée de l'application => Ici, on va définir les routes de l'application
+ */
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Box>
+                <div>Navigation</div>
+                <Routes>
+                    <Route path="/" element={<div>Home</div>}/>
+                    <Route path="/login" element={<div>Login</div>}/>
+                    <Route path="/signup" element={<div>Signup</div>}/>
+                    <Route path="*" element={<div>404</div>}/>
+                </Routes>
+            </Box>
+        </div>
+    );
 }
 
 export default App;
