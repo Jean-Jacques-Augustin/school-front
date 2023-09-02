@@ -18,7 +18,13 @@ const StyledCustomButton = styled(Button)`
 
 
 export default function CustomButton({text, onClick, isDisabled, startIcon}: CustomButtonInterface) {
-    return (<StyledCustomButton variant="contained" onClick={onClick} disabled={isDisabled} startIcon={startIcon}>
+    return (
+        <StyledCustomButton
+            variant="contained"
+            onClick={onClick}
+            disabled={isDisabled}
+            startIcon={startIcon}
+        >
         {text}
     </StyledCustomButton>)
 }

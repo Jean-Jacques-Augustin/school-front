@@ -5,13 +5,12 @@ import {styled} from "@mui/material";
 
 interface CustomLinkInterface {
     href: string;
-    children: React.ReactNode;
+    children?: React.ReactNode;
 }
 
 const StyledCustomLink = styled(Link)`
-  color: #007bff;
+  color: inherit;
   text-decoration: none;
-  font-weight: bold;
 `;
 
 export default function CustomLink({href, children}: CustomLinkInterface) {
@@ -19,3 +18,7 @@ export default function CustomLink({href, children}: CustomLinkInterface) {
         {children}
     </StyledCustomLink>)
 }
+
+/*
+link to ='/' => <a href='/'>Home</a>
+ */
