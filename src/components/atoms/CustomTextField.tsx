@@ -1,15 +1,21 @@
 import React from "react";
 import { styled, TextField } from "@mui/material";
 
-interface CustomLoginInterface {
-  children?: React.ReactNode;
+interface CustomTextFieldInterface {
+  label: string;
+  value: string;
+  onchange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const StyledCustomLogin = styled(TextField)`
+const CustomTextField = styled(TextField)`
   color: inherit;
   text-decoration: none;
 `;
 
-export default function CustomLogin({ children }: CustomLoginInterface) {
-  return <StyledCustomLogin>{children}</StyledCustomLogin>;
+export default function CustomLogin({
+  label,
+  value,
+  onchange,
+}: CustomTextFieldInterface) {
+  return <CustomTextField>{children}</CustomTextField>;
 }
