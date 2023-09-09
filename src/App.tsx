@@ -1,10 +1,12 @@
 import React from "react";
 
 import "./App.css";
-import {Box, Toolbar} from "@mui/material";
-import {Route, Routes} from "react-router-dom";
+import { Box, Toolbar } from "@mui/material";
+import { Route, Routes } from "react-router-dom";
 import CustomNavigation from "./components/molecules/CustomNavigation";
 import Navbar from "./components/organisms/Navbar";
+import CustomLoginStudents from "./components/molecules/CustomLogin";
+import Login from "./pages/login";
 
 /**
  * @name App
@@ -16,13 +18,13 @@ function App() {
     return (
         <div className="App">
             <Box>
-                <Navbar/>
-                <Toolbar/>
+                <Navbar />
+                <Toolbar />
                 <Routes>
-                    <Route path="/" element={<div>Home</div>}/>
-                    <Route path="/login" element={<div>Login</div>}/>
-                    <Route path="/signup" element={<div>Signup</div>}/>
-                    <Route path="*" element={<div>404</div>}/>
+                    <Route path="/" element={<div>Home</div>} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/signup" element={<div>Signup</div>} />
+                    <Route path="*" element={<div>404</div>} />
                 </Routes>
             </Box>
         </div>
