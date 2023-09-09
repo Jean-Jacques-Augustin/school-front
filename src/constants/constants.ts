@@ -20,12 +20,3 @@ export const navlinks = [
     path: "/login",
   },
 ];
-
-export const loginAllStudents = [
-  {
-    id: "",
-    name: "",
-    age: "",
-    email: "",
-  },
-];
