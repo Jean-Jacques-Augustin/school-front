@@ -71,6 +71,7 @@ export default function CustomNavigation({
                     margin: "10px",
                     display: "flex",
                     justifyContent: "center",
+                    cursor: "pointer",
                   }}
                 >
                   {navlink.name}
