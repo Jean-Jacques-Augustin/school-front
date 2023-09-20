@@ -14,6 +14,21 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { navlinksType } from "../../types/students";
 
+const drawerWidth = 240;
+
+const simpleDrawer = {
+  drawer: {
+    width: drawerWidth,
+    "& .MuiBackdrop-root": {
+      display: "none",
+    },
+  },
+  drawerPaper: {
+    width: drawerWidth,
+    backgroundColor: "rgba(120,120,120,0.2)",
+  },
+};
+
 interface CustomNavigationInterface {
   title: string;
   navliks: navlinksType[];
@@ -63,7 +78,15 @@ export default function CustomNavigation({
             >
               {open ? <CloseIcon /> : <MenuIcon />}
             </IconButton>
-            <Drawer anchor={"left"} open={open} onClose={updateOpen}>
+            <Drawer
+              variant="temporary"
+              anchor={"left"}
+              open={open}
+              onClose={updateOpen}
+              sx={simpleDrawer.drawer}
+              PaperProps={{ sx: simpleDrawer.drawerPaper, elevation: 9 }}
+            >
+              <Toolbar />
               <h1>Hello word</h1>
             </Drawer>
           </Hidden>
