@@ -1,7 +1,8 @@
+import DashboardOrganism from "../../components/organisms/Dashboard";
+import {dashboardLink} from "../../constants/constants";
+
 export default function Dashboard() {
     return (
-        <div>
-            <h1>Dashboard</h1>
-        </div>
+        <DashboardOrganism links={dashboardLink}  name={'Tableau de bord'}/>
     );
 }
