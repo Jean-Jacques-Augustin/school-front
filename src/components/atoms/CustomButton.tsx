@@ -14,6 +14,7 @@ const StyledCustomButton = styled(Button)`
   color: #fff;
   font-size: 16px;
   padding: 10px 20px
+  border : '2px solid #007bff';
 `;
 
 
