@@ -70,7 +70,7 @@ export default function CustomNavigation({
                   flexDirection: "column",
                   alignItems: "center",
                   justifyContent: "center",
-                  width: "240px",
+                  width: "241px",
                   gap: "1rem",
                   paddingTop: "6rem",
                 }}
