@@ -64,7 +64,21 @@ export default function CustomNavigation({
               {open ? <CloseIcon /> : <MenuIcon />}
             </IconButton>
             <Drawer anchor={"left"} open={open} onClose={updateOpen}>
-              <h1>Hello word</h1>
+              <main
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  width: "241px",
+                  gap: "1rem",
+                  paddingTop: "6rem",
+                }}
+              >
+                {navliks.map((navlink) => (
+                  <CustomLink href={navlink.path}>{navlink.name}</CustomLink>
+                ))}
+              </main>
             </Drawer>
           </Hidden>
         </Toolbar>
