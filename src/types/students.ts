@@ -1,12 +1,12 @@
-
 export interface StudentsType {
-    id: number;
-    name: string;
-    age: number;
-    email: string;
+  id: number;
+  name: string;
+  age: number;
+  email: string;
 }
 
 export interface navlinksType {
-    name: string;
-    path: string;
+  name: string;
+  path: string;
+  icon: React.ReactElement;
 }

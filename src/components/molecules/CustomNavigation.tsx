@@ -13,6 +13,7 @@ import CustomLink from "../atoms/CustomLink";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { navlinksType } from "../../types/students";
+import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 
 interface CustomNavigationInterface {
   title: string;
@@ -70,13 +71,25 @@ export default function CustomNavigation({
                   flexDirection: "column",
                   alignItems: "center",
                   justifyContent: "center",
-                  width: "241px",
+                  width: "240px",
                   gap: "1rem",
                   paddingTop: "6rem",
                 }}
               >
                 {navliks.map((navlink) => (
-                  <CustomLink href={navlink.path}>{navlink.name}</CustomLink>
+                  <CustomLink href={navlink.path}>
+                    <main
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexDirection: "row",
+                        gap: "1rem",
+                      }}
+                    >
+                      {navlink.icon} {navlink.name}
+                    </main>
+                  </CustomLink>
                 ))}
               </main>
             </Drawer>
