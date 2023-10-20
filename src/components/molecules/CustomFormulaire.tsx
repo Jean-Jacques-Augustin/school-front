@@ -29,6 +29,9 @@ export default function CustomFormulaire() {
               <CustomTextField label="Email" />
             </Grid>
             <Grid item>
+              <CustomTextField label="Adress" />
+            </Grid>
+            <Grid item>
               <Button type="submit" variant="contained" color="primary">
                 Submit
               </Button>
