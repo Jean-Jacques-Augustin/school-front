@@ -77,7 +77,7 @@ export default function CustomNavigation({
                 }}
               >
                 {navliks.map((navlink) => (
-                  <CustomLink href={navlink.path}>
+                  <CustomLink href={navlink.path} key={navlink.path}>
                     <main
                       style={{
                         display: "flex",
