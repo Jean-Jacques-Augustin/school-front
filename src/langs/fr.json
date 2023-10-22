@@ -1,0 +1,23 @@
+{
+     "login":"Se connecter",
+     "register":"S'inscrire",
+     "Admin":"Admin",
+     "Home":"Accueil",
+     "About":"A propos",
+     "Contact":"Contact",
+     "Logout":"Se déconnecter",
+     "Welcome":"Bienvenue",
+     "Username":"Nom d'utilisateur",
+     "Password":"Mot de passe",
+     "Email":"Email",
+     "Name":"Nom",
+     "Surname":"Prénom",
+     "Phone":"Téléphone",
+     "Address":"Adresse",
+     "City":"Ville",
+     "Country":"Pays",
+     "PostalCode":"Code postal",
+     "Register":"S'inscrire",
+     "Login":"Se connecter",
+     "Add":"Ajouter"
+}
